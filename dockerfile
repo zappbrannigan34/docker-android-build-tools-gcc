@@ -2,6 +2,8 @@ FROM ubuntu
 
 #MAINTAINER Alexey Kuznetsov <kuznetsovalexey34@gmail.com>
 
+RUN apt-get update && apt-get -y upgrade && apt-get install -y default-jdk
+
 #ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 #RUN echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> /etc/environment
