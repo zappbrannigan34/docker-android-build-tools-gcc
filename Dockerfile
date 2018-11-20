@@ -12,7 +12,7 @@ run apt-get install -y wget
 
 run apt-get install -y openjdk-8-jdk
 
-run apt-get install -y build-essential
+run apt-get install -y git
 
 run wget -O /tmp/z.$$ https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 
