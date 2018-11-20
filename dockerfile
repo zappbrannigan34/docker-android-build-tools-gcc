@@ -1,10 +1,24 @@
-FROM ubuntu
+from ubuntu
 
-#MAINTAINER Alexey Kuznetsov <kuznetsovalexey34@gmail.com>
+maintainer Alexey Kuznetsov <kuznetsovalexey34@gmail.com>
 
-RUN apt-get update && apt-get -y upgrade && apt-get install -y default-jdk
+run apt-get update
 
-#ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+run apt-get -y upgrade
+
+run apt-get install -y unzip wget openjdk-8-jdk
+
+run wget -O /tmp/z.$$ https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+
+run unzip -d /usr/lib/android-sdk /tmp/z.$$
+
+run rm /tmp/z.$$
+
+run yes|/usr/lib/android-sdk/tools/bin/sdkmanager --licenses 
+run yes|/usr/lib/android-sdk/tools/bin/sdkmanager ndk-bundle 
+#"extras;android;m2repository"
+
+env ANDROID_HOME /usr/lib/android-sdk
 
 #RUN echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> /etc/environment
 
