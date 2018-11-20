@@ -6,7 +6,13 @@ run apt-get update
 
 run apt-get -y upgrade
 
-run apt-get install -y unzip wget openjdk-8-jdk
+run apt-get install -y unzip
+
+run apt-get install -y wget
+
+run apt-get install -y openjdk-8-jdk
+
+run apt-get install -y build-essential
 
 run wget -O /tmp/z.$$ https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 
