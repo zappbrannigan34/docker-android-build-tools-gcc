@@ -24,7 +24,9 @@ run yes|/usr/lib/android-sdk/tools/bin/sdkmanager --licenses
 
 run yes|/usr/lib/android-sdk/tools/bin/sdkmanager --update
 
-run yes|/usr/lib/android-sdk/tools/bin/sdkmanager ndk-bundle 
+run yes|/usr/lib/android-sdk/tools/bin/sdkmanager ndk-bundle
+
+run apt-get install -y openssh-client
 
 env ANDROID_HOME /usr/lib/android-sdk
 
