@@ -22,6 +22,8 @@ run rm /tmp/z.$$
 
 run yes|/usr/lib/android-sdk/tools/bin/sdkmanager --licenses 
 
+run yes|/usr/lib/android-sdk/tools/bin/sdkmanager --update
+
 run yes|/usr/lib/android-sdk/tools/bin/sdkmanager ndk-bundle 
 
 env ANDROID_HOME /usr/lib/android-sdk
