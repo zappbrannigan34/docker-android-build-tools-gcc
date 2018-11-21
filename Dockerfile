@@ -28,6 +28,12 @@ run yes|/usr/lib/android-sdk/tools/bin/sdkmanager ndk-bundle
 
 run apt-get install -y openssh-client
 
+RUN apt-get install -y locales
+
+RUN locale-gen en_US.UTF-8
+
+ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
+
 env ANDROID_HOME /usr/lib/android-sdk
 
 #Cleaning
