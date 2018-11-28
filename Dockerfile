@@ -36,6 +36,8 @@ ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
 run apt-get install -y build-essential
 
+run apt-get install -y curl
+
 env ANDROID_HOME /usr/lib/android-sdk
 
 #Cleaning
