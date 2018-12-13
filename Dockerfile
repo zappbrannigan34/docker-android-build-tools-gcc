@@ -40,6 +40,10 @@ run apt-get install -y curl
 
 env ANDROID_HOME /usr/lib/android-sdk
 
+copy root_pem_geotrust_rapidssl.crt /usr/share/ca-certificates/
+
+run update-ca-certificates --fresh
+
 #Cleaning
 
 RUN apt-get clean
