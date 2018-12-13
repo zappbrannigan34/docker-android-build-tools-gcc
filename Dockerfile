@@ -40,7 +40,9 @@ run apt-get install -y curl
 
 env ANDROID_HOME /usr/lib/android-sdk
 
-copy root_pem_geotrust_rapidssl.crt /usr/share/ca-certificates/
+copy root_pem_geotrust_rapidssl.crt /usr/local/share/ca-certificates/
+
+copy intermediate_pem_geotrust_rapidssl.crt /usr/local/share/ca-certificates/
 
 run update-ca-certificates --fresh
 
