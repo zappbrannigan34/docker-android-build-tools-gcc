@@ -46,6 +46,8 @@ copy intermediate_pem_geotrust_rapidssl.crt /usr/local/share/ca-certificates/
 
 run update-ca-certificates --fresh
 
+RUN useradd -ms /bin/bash jenkins
+
 #Cleaning
 
 RUN apt-get clean
