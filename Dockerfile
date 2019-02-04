@@ -14,6 +14,8 @@ run apt-get install -y openjdk-8-jdk
 
 run apt-get install -y git
 
+run apt-get install -y openssh-client
+
 run wget -O /tmp/z.$$ https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 
 run unzip -d /usr/lib/android-sdk /tmp/z.$$
